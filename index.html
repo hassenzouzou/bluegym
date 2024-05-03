@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- /////////////// font /////////////// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <title>Blue Gym</title>
+  </head>
+  <body>
+    <header
+      class="flex flex-row justify-between items-center px-32 py-8 bg-black text-blue-500 fixed inset-x-0"
+    >
+      <h1 class="text-4xl font-bold cursor-pointer">
+        BLUE <span class="text-[#eee]">GYM</span>
+      </h1>
+      <div class="flex justify-between text-2xl text-white">
+        <p class="mr-6 cursor-pointer hover:text-blue-500 duration-500">Home</p>
+        <p class="mr-6 cursor-pointer hover:text-blue-500 duration-500">
+          About Us
+        </p>
+        <p class="mr-6 cursor-pointer hover:text-blue-500 duration-500">
+          Courses
+        </p>
+        <p class="mr-6 cursor-pointer hover:text-blue-500 duration-500">Food</p>
+        <p class="mr-6 cursor-pointer hover:text-blue-500 duration-500">
+          Our Plans
+        </p>
+        <p class="mr-6 cursor-pointer hover:text-blue-500 duration-500">
+          Contact
+        </p>
+      </div>
+      <a href="#"
+        ><button class="button">
+          <p class="text-[#eee]">Get Started</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            ></path>
+          </svg></button
+      ></a>
+    </header>
+
+    <section
+      class="flex flex-col justify-center items-center text-center"
+      id="sec01"
+    >
+      <div class="text-white mb-5">
+        <p class="text-2xl">Shape your body BOY</p>
+        <p class="font-bold text-6xl">BE STRONG</p>
+        <p class="font-bold text-7xl">
+          TRAINING <span class="text-blue-500">HARD</span>
+        </p>
+      </div>
+      <button
+        class="text-white border-2 px-8 py-2 font-bold hover:bg-blue-500 duration-500 text-xl"
+      >
+        GET INFO
+      </button>
+    </section>
+
+    <section class=" pt-14 font-bold bg-[#eee]" id="sec02">
+      <div class=" mx-32">
+        <div class="">
+          <p class=" text-center text-xl">WHY CHOSE US?</p>
+          <p class=" text-center text-4xl mb-8 ">PUSH YOUR LIMITS FORWARD</p>
+        </div>
+        <div class="cards">
+          <div class="container flex flex-row justify-evenly">
+            <div class="card_box">
+              <img src="icons/equipment icon.webp" alt="">
+            </div>
+            <div class="card_box">
+              <img src="icons/helthy food icon.png" alt="">
+            </div>
+            <div class="card_box">
+              <img src="icons/training icon.png" alt="">
+            </div>
+            <div class="card_box">
+              <img src="icons/heart icon.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
