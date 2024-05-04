@@ -2,6 +2,10 @@
   font-family: Ubuntu;
 }
 
+header {
+  z-index: 100;
+}
+
 #sec01 {
   background-image: url(img/gym-bg.jpg);
   background-size: cover;
@@ -84,7 +88,7 @@
 }
 
 .card_box {
-  width: 250px;
+  width: 265px;
   height: 300px;
   border-radius: 20px;
   background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
@@ -96,4 +100,33 @@
 
 .card_box:hover {
   transform: scale(0.9);
+}
+
+.container01 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container01 .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container01:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
 }
